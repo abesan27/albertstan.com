@@ -29,7 +29,7 @@ export default function Home() {
       </h1>
 
       <h4 className="scroll-m-20 text-xl font-semibold tracking-tight">
-        i&apos;m a full-stack software developer that mostly codes in typescript
+        a full-stack software engineer that mostly codes typescript
       </h4>
 
       <div className="flex flex-wrap gap-2">
@@ -48,14 +48,14 @@ export default function Home() {
         </Button>
 
         <Button size="icon" asChild>
-          <Link href="https://twitter.com/abesan27">
-            <TwitterLogoIcon className="h-4 w-4" />
+          <Link href="https://github.com/abesan27">
+            <GitHubLogoIcon className="h-4 w-4" />
           </Link>
         </Button>
 
         <Button size="icon" asChild>
-          <Link href="https://github.com/abesan27">
-            <GitHubLogoIcon className="h-4 w-4" />
+          <Link href="https://twitter.com/abesan27">
+            <TwitterLogoIcon className="h-4 w-4" />
           </Link>
         </Button>
       </div>
@@ -66,27 +66,27 @@ export default function Home() {
 
       <Card>
         <CardHeader>
-          <CardTitle className="-mb-0.5">kubrio</CardTitle>
-          <CardDescription>front-end developer</CardDescription>
+          <CardTitle className="-mb-0.5">kubrio.com</CardTitle>
+          <CardDescription>front-end engineer</CardDescription>
         </CardHeader>
 
         <CardContent className="-mt-3">
           <CardDescription>2021 - present</CardDescription>
 
-          <p>where young innovators, makers, and creators build their future.</p>
+          <p>where young innovators, makers, and creators build their future</p>
         </CardContent>
       </Card>
 
       <Card>
         <CardHeader>
-          <CardTitle className="-mb-0.5">getwineful</CardTitle>
+          <CardTitle className="-mb-0.5">getwineful.com</CardTitle>
           <CardDescription>ceo & founder</CardDescription>
         </CardHeader>
 
         <CardContent className="-mt-2">
           <CardDescription>2023 - present</CardDescription>
 
-          <p>the only app for natural wine enthusiasts.</p>
+          <p>the only app for natural wine enthusiasts</p>
         </CardContent>
       </Card>
     </div>
