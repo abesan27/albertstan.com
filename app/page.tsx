@@ -29,7 +29,7 @@ export default function Home() {
       </h1>
 
       <h4 className="scroll-m-20 text-xl font-semibold tracking-tight">
-        a full-stack software engineer that mostly codes typescript
+        a full-stack software engineer that mostly writes typescript
       </h4>
 
       <div className="flex flex-wrap gap-2">
