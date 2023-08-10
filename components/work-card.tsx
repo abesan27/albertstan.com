@@ -22,7 +22,7 @@ const WorkCard = ({ name, role, workFrom, workUntill, description }: WorkCardPro
           {workFrom} - {workUntill}
         </CardDescription>
 
-        <div>
+        <div className="mt-0.5">
           <TypographyP>{description}</TypographyP>
         </div>
       </CardContent>

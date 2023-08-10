@@ -23,7 +23,7 @@ const TypographyH4 = ({ children }: TypographyProps) => {
 };
 
 const TypographyP = ({ children }: TypographyProps) => {
-  return <p className="leading-7 [&:not(:first-child)]:mt-6">{children}</p>;
+  return <p className="leading-6 [&:not(:first-child)]:mt-6">{children}</p>;
 };
 
 const TypographyBlockquote = ({ children }: TypographyProps) => {
