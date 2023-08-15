@@ -7,7 +7,7 @@ const WorkSection = () => {
   const experience: WorkCardProps[] = [
     {
       name: "kubrio.com",
-      role: "front-end engineer",
+      role: "front-end developer",
       workFrom: "2021",
       workUntill: "present",
       description: "where young innovators, makers, and creators build their future",

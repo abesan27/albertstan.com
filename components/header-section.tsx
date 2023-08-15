@@ -26,7 +26,7 @@ const HeaderSection = () => {
         <span className="text-neutral-600">👋 hey there,</span> <br /> i&apos;m albert stan
       </TypographyH1>
 
-      <TypographyH4>a full-stack software engineer that mostly writes typescript</TypographyH4>
+      <TypographyH4>a full-stack software developer that mostly writes typescript</TypographyH4>
 
       <div className="flex flex-wrap gap-1.5">
         {technologies.map((tech, index) => (
