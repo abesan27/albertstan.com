@@ -30,6 +30,10 @@ const TypographyBlockquote = ({ children }: TypographyProps) => {
   return <blockquote className="mt-6 border-l-2 pl-6 italic">{children}</blockquote>;
 };
 
+const TypographyMuted = ({ children }: TypographyProps) => {
+  return <p className="text-sm text-muted-foreground">{children}</p>;
+};
+
 export {
   TypographyH1,
   TypographyH2,
@@ -37,4 +41,5 @@ export {
   TypographyH4,
   TypographyP,
   TypographyBlockquote,
+  TypographyMuted,
 };
