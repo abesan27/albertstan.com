@@ -3,8 +3,8 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react";
 import { Container } from "@/components/container";
-import { Separator } from "@/components/ui/separator";
-import { Footer } from "@/components/footer";
+import { GeistSans } from "geist/font/sans";
+import { GeistMono } from "geist/font/mono";
 import React from "react";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -20,7 +20,7 @@ interface RootLayoutProps {
 
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${GeistSans.variable} ${GeistMono.variable}`}>
       <body className={inter.className}>
         <Container>{children}</Container>
 

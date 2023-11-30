@@ -9,7 +9,7 @@ import { Footer } from "@/components/footer";
 
 const Home = () => {
   React.useEffect(() => {
-    console.log("i see you sneaking in here :)");
+    console.log("'sup");
   }, []);
 
   return (
