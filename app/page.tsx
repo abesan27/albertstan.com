@@ -2,7 +2,6 @@
 
 import React from "react";
 
-import { Container } from "@/components/container";
 import { Separator } from "@/components/ui/separator";
 import { WorkSection } from "@/components/work-section";
 import { HeaderSection } from "@/components/header-section";
@@ -14,17 +13,15 @@ const Home = () => {
   }, []);
 
   return (
-    <Container>
+    <React.Fragment>
       <HeaderSection />
 
       <Separator />
 
       <WorkSection />
 
-      <Separator />
-
       <Footer />
-    </Container>
+    </React.Fragment>
   );
 };
 

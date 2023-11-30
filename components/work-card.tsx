@@ -1,15 +1,8 @@
 import { TypographyP } from "@/components/typography";
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card";
+import { WorkExperience } from "@/types";
 
-interface WorkCardProps {
-  name: string;
-  role: string;
-  workFrom: string;
-  workUntill: string;
-  description: string;
-}
-
-const WorkCard = ({ name, role, workFrom, workUntill, description }: WorkCardProps) => {
+const WorkCard = ({ name, role, workFrom, workUntill, description }: WorkExperience) => {
   return (
     <Card className="space-y-4">
       <CardHeader className="pb-0">
@@ -31,4 +24,3 @@ const WorkCard = ({ name, role, workFrom, workUntill, description }: WorkCardPro
 };
 
 export { WorkCard };
-export type { WorkCardProps };

@@ -1,13 +1,11 @@
-"use client";
-
-import { Container } from "@/components/container";
 import { TypographyH4 } from "@/components/typography";
+import React from "react";
 
 const Error = () => {
   return (
-    <Container>
+    <React.Fragment>
       <TypographyH4>404 error...</TypographyH4>
-    </Container>
+    </React.Fragment>
   );
 };
 

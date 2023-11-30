@@ -1,11 +1,11 @@
 import React from "react";
 import Link from "next/link";
 
-import { EnvelopeOpenIcon, TwitterLogoIcon, GitHubLogoIcon } from "@radix-ui/react-icons";
+import { EnvelopeOpenIcon, GitHubLogoIcon } from "@radix-ui/react-icons";
 
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { TypographyH1, TypographyH4 } from "@/components/typography";
+import { Hero } from "@/components/hero";
 
 const HeaderSection = () => {
   const technologies = [
@@ -22,11 +22,7 @@ const HeaderSection = () => {
 
   return (
     <React.Fragment>
-      <TypographyH1>
-        <span className="text-neutral-600">👋 hey there,</span> <br /> i&apos;m albert stan
-      </TypographyH1>
-
-      <TypographyH4>a full-stack software developer that mostly writes typescript</TypographyH4>
+      <Hero />
 
       <div className="flex flex-wrap gap-1.5">
         {technologies.map((tech, index) => (
@@ -46,12 +42,6 @@ const HeaderSection = () => {
         <Button size="icon" asChild>
           <Link href="https://github.com/abesan27">
             <GitHubLogoIcon className="h-4 w-4" />
-          </Link>
-        </Button>
-
-        <Button size="icon" asChild>
-          <Link href="https://twitter.com/abesan27">
-            <TwitterLogoIcon className="h-4 w-4" />
           </Link>
         </Button>
       </div>
