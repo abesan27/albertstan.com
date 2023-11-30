@@ -1,23 +1,34 @@
-import { TypographyP } from "@/components/typography";
+import { TypographyMuted, TypographyP } from "@/components/typography";
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card";
 import { WorkExperience } from "@/types";
+import Link from "next/link";
 
-const WorkCard = ({ name, role, workFrom, workUntill, description }: WorkExperience) => {
+const WorkCard = ({ place, role, workFrom, workUntill, description }: WorkExperience) => {
+  let title: React.ReactNode;
+
+  if (place.url) {
+    title = (
+      <Link href={place.url}>
+        <span className="hover:underline underline-offset-1">{place.name}</span>
+      </Link>
+    );
+  } else {
+    title = <span>{place.name}</span>;
+  }
+
   return (
     <Card className="space-y-4">
       <CardHeader className="pb-0">
-        <CardTitle className="-mb-0.5">{name}</CardTitle>
+        <CardTitle className="-mb-1">{title}</CardTitle>
         <CardDescription>{role}</CardDescription>
       </CardHeader>
 
-      <CardContent>
-        <CardDescription>
+      <CardContent className="space-y-0">
+        <TypographyMuted>
           {workFrom} - {workUntill}
-        </CardDescription>
+        </TypographyMuted>
 
-        <div className="mt-0.5">
-          <TypographyP>{description}</TypographyP>
-        </div>
+        <TypographyP>{description}</TypographyP>
       </CardContent>
     </Card>
   );

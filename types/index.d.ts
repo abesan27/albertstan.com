@@ -1,5 +1,8 @@
 export type WorkExperience = {
-  name: string;
+  place: {
+    name: string;
+    url?: string;
+  };
   role: string;
   workFrom: string;
   workUntill: string;

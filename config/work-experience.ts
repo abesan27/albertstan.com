@@ -2,15 +2,20 @@ import { WorkExperience } from "@/types";
 
 export const experience: WorkExperience[] = [
   {
-    name: "kubrio.com",
+    place: {
+      name: "kubrio",
+      url: "https://kubrio.com/",
+    },
     role: "front-end developer",
-    workFrom: "2021",
+    workFrom: "2022",
     workUntill: "present",
     description: "where young innovators, makers, and creators build their future",
   },
   {
-    name: "getwineful.com",
-    role: "ceo & founder",
+    place: {
+      name: "getwineful",
+    },
+    role: "founder",
     workFrom: "2023",
     workUntill: "present",
     description: "the only app for natural wine enthusiasts",
