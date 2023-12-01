@@ -4,6 +4,7 @@ export type WorkExperience = {
     url?: string;
   };
   role: string;
+  post?: string;
   workFrom: string;
   workUntill: string;
   description: string;

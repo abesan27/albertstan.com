@@ -7,6 +7,7 @@ export const experience: WorkExperience[] = [
       url: "https://kubrio.com/",
     },
     role: "front-end developer",
+    post: "/kubrio",
     workFrom: "2022",
     workUntill: "present",
     description: "where young innovators, makers, and creators build their future",
