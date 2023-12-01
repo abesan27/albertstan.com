@@ -1,11 +1,13 @@
 import React from "react";
 
-import { TypographyH3, TypographyMuted, TypographyP } from "@/components/typography";
+import { TypographyH3, TypographyP } from "@/components/typography";
 
 const KubrioExperience = () => {
   return (
     <React.Fragment>
-      <TypographyH3>developer at kubrio</TypographyH3>
+      <TypographyH3>
+        front-end developer <br /> at kubrio
+      </TypographyH3>
 
       <div className="text-muted-foreground space-y-3">
         <TypographyP>
@@ -20,9 +22,9 @@ const KubrioExperience = () => {
         </TypographyP>
 
         <TypographyP>
-          currently, i&apos;m working on a new thrilling project: a ground up rebuild of the current
-          kubrio website. i&apos;m using my personal favorite tech stack: typescript, react, next.js
-          13, radix ui & many more cool technologies.
+          currently, i&apos;m working on a thrilling new project: a ground up rebuild of the current
+          kubrio.com website. i&apos;m using my personal favorite tech stack: typescript, react,
+          next.js 13, radix ui & many more cool technologies.
         </TypographyP>
       </div>
     </React.Fragment>
